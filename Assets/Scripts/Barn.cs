@@ -37,6 +37,7 @@ public class Barn : MonoBehaviour
     {
         if (col.gameObject.GetComponent<Animal>())
         {
+            GetComponent<AudioSource>().Play();
             Destroy(col.gameObject);
         }
     }
